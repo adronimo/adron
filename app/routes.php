@@ -28,3 +28,5 @@ Route::get('prueba', function()
 
 	return "El usuario prueba ha sido salvado a la BD.";
 });
+
+Route::controller('users','UserController');
