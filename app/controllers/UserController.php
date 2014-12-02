@@ -4,6 +4,7 @@ class UserController extends BaseController
 {
 	public function getIndex()
 	{
-		return "Bienvenidos al controller para los usuarios";
+		$users = User::all();
+		return View::make('users.index') -> with('users', $users);
 	}	
 }
